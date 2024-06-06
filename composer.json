@@ -1,0 +1,36 @@
+{
+    "name": "artefactual/accesstomemory",
+    "type": "project",
+    "description": "A web-based, open source application for standards-based archival description.",
+    "keywords": [
+        "archives",
+        "archival-description"
+    ],
+    "license": "AGPL-3.0-only",
+    "config": {
+        "vendor-dir": "vendor/composer"
+    },
+    "require-dev": {
+        "mikey179/vfsstream": "^1.6",
+        "phpunit/phpunit": "^9.5",
+        "phing/phing": "2.*",
+        "friendsofphp/php-cs-fixer": "^3.0"
+    },
+    "require": {
+        "league/csv": "^9.4",
+        "jasig/phpcas": "^1.3.8",
+        "ezyang/htmlpurifier": "^4.13",
+        "ruflin/elastica": "5.*",
+        "jumbojett/openid-connect-php": "^1.0"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "AccessToMemory\\test\\": "test/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "test-cov": "@php -dpcov.enabled=1 ./vendor/composer/bin/phpunit --coverage-html=.coverage/html",
+        "php-cs-fixer": "php-cs-fixer"
+    }
+}

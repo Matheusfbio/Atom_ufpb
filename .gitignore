@@ -1,0 +1,47 @@
+# User-generated configuration files
+/apps/qubit/config/factories.yml
+/apps/qubit/config/settings.yml
+/apps/qubit/config/app.yml
+/apps/qubit/config/gearman.yml
+/apps/qubit/config/search.yml
+/config/search.yml
+/config/config.php
+/config/databases.yml
+/config/propel.ini
+/config/diacritics_mapping.yml
+
+# Internal use
+/cache/
+/log/
+/sf
+/build/
+
+# Symlinks or dirctories are possible
+/downloads
+/uploads
+
+# Sitemap
+/sitemap.*
+
+# Transifex files
+.tx/i18n
+
+# Composer and NPM dependencies
+/vendor/composer/
+node_modules
+
+# Webpack assets
+dist
+config/unavailableB5.php
+config/error/errorB5.html.php
+
+# PHPUnit and php-cs-fixer caches and coverage
+/.phpunit.result.cache
+/.php-cs-fixer.cache
+.coverage
+
+# Cypress
+cypress/downloads
+cypress/screenshots
+cypress/videos
+cypress.env.json

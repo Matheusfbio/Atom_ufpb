@@ -1,0 +1,17 @@
+<phpunit bootstrap="test/bootstrap/phpunit.php">
+  <testsuites>
+    <testsuite name="unit">
+      <directory>test/phpunit</directory>
+    </testsuite>
+  </testsuites>
+  <coverage cacheDirectory=".coverage/cache">
+    <include>
+      <directory suffix=".php">.</directory>
+    </include>
+    <exclude>
+      <directory suffix=".php">cache</directory>
+      <directory suffix=".php">test</directory>
+      <directory suffix=".php">vendor</directory>
+    </exclude>
+  </coverage>
+</phpunit>
